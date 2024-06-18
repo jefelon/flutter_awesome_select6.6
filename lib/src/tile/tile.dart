@@ -214,7 +214,7 @@ class S2Tile<T> extends StatelessWidget {
           child: isLoading == true ? _loadingWidget : value,
           style: isError == true
               ? TextStyle(color: Theme.of(context).colorScheme.error)
-              : Theme.of(context).textTheme.headline6,
+              : null,
           overflow: TextOverflow.ellipsis,
           maxLines: 1,
         );
